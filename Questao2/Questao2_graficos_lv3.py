@@ -5,7 +5,7 @@ from dash.dependencies import Input, Output, State
 import plotly.express as px
 
 # carrega os dados do Excel em um DataFrame
-excel_file = pd.ExcelFile('../data/anexo1.xlsx')
+excel_file = pd.ExcelFile('data/anexo1.xlsx')
 data = pd.read_excel(excel_file, sheet_name='Sheet')
 
 # Filtra os colaboradores com último cargo e status ativo
